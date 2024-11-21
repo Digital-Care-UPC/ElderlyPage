@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Elderly</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="70" width="70" src="img/logo.png" alt="" />
+      </a>
+      <ul class="menu-horizontal">
+        <li>
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="">Servicios</a>
+          <ul class="menu-vertical">
+            <li><a href="">Monitoreo</a></li>
+            <li><a href="">Visitas</a></li>
+            <li><a href="">Plataforma</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Plataforma</a>
+          <ul class="menu-vertical">
+            <li><a href="">Ver historial</a></li>
+            <li><a href="">Configurar</a></li>
+            <li><a href="">Alertas</a></li>
+            <li><a href="">Solicitar ayuda</a></li>
+            <li><a href="">Ver planes de servicio</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Recursos</a>
+          <ul class="menu-vertical">
+            <li><a href="">Personal calificado</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Nosotros</a>
+          <ul class="menu-vertical">
+            <li><a href="">Misión</a></li>
+            <li><a href="">Visión</a></li>
+            <li><a href="">Opiniones</a></li>
+            <li><a href="">Nuestros valores</a></li>
+          </ul>
+    </nav>
+    <header class="hero"> 
+
+
+      <section class = "Inscripcion-Section">
+        <div class = "Container-Section">
+            <form name = "frm" method="post" action="">
+              <fieldset id="form">
+                <legend>Selecciona una fecha para tu cita</legend>
+                <section id="date-picker">
+                  <input type="date" id="appointment-date" min="2024-11-01" />
+                  <div id="available-times">
+                    <div id="time-slots"></div>
+                  </div>
+                  <button id="confirm-btn" disabled>Confirmar Cita</button>
+                </section>
+                <section id="confirmation">
+                  <p id="selected-date"></p>
+                  <p id="selected-time"></p>
+                </section>
+                <ol>
+                    <li><label>Nombres:</label>
+                    <input type="text" name="fname" size="70"/></li>
+                    <li><label>Apellidos:</label>
+                    <input type="text" name="flastname" size="70"/></li>
+                    <li><label>Direccion:</label>
+                    <input type="text" name="fadress" size="70"/></li>
+                    <li><label>Telefono:</label>
+                    <input type="text" name="fphone" size="70"/></li>
+                    <li><label>Correo:</label>
+                    <input type="text" name="femail" size="70"/></li>
+                    <li><label>Sexo:</label>
+                    <input type="radio" name="fsex" size="70" value="H"/>Hombre
+                    <input type="radio" name="fsex" size="80" value="H"/>Mujer
+                    <input type="radio" name="fsex" size="80" value="H"/>Otros</li>
+                    <li>
+                      <label for="message"
+                        >Detalles de tu cita:</label
+                      >
+                      <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        cols="30"
+                        placeholder="Escribe tu mensaje aquí..."
+                      ></textarea>
+                    </li>
+                 </ol> 
+                 <p><input class="btn-frm-insc" type="submit" value="Enviar"/></p>
+  
+              </fieldset>
+            </form>
+        </div>
+    </section>   
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
